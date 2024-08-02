@@ -56,8 +56,8 @@ export default function NavBar() {
             </div>
         </div>
         {isMenuOpen && (
-            <div className="md:hidden">
-            <ul className="flex flex-col space-y-4">
+            <div className="md:hidden bg-[#252525]">
+            <ul className="flex flex-col space-y-4 ">
                 <li className='ml-5 mt-5'>
                 <a href="#" className="text-white">Home</a>
                 </li>
@@ -67,7 +67,7 @@ export default function NavBar() {
                 <li className='m-5'>
                 <a href="#" className="text-white">Services</a>
                 </li>
-                <li className='m-5'>
+                <li className='m-5 pb-5'>
                 <a href="#" className="text-white">Contact</a>
                 </li>
             </ul>

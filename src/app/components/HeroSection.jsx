@@ -2,11 +2,11 @@
 
 export default function HeroSection() {
   return (
-    <div className="m-2 mt-20">
+    <div className="m-2 mt-20 bg-[#252525] ">
       <div className="flex gap-2 max-md:flex-col max-md:gap-0">
         <div className="flex flex-col w-[56%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col grow px-16 pt-20 pb-10 w-full bg-[#AD88C6] border-[3px] border-white border-solid rounded-[38px] max-md:px-5 max-md:mt-5 max-md:max-w-full">
-            <div className="text-5xl font-bold text-neutral-800 max-md:max-w-full max-md:text-4xl">
+            <div className="text-5xl font-bold text-[#252525] max-md:max-w-full max-md:text-4xl">
               Hey, I’m Sarthak, Web Developer With Strong Coding Skills{" "}
             </div>
             <div className="mt-11 text-base text-justify text-black max-md:mt-10 max-md:max-w-full">
@@ -46,11 +46,11 @@ export default function HeroSection() {
             <div className="px-16 py-11 bg-[#DD5746]  border-[3px] border-white border-solid rounded-[38px] max-md:px-5 max-md:max-w-full">
               <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                 <div className="flex flex-col w-[40%] max-md:ml-0 max-md:w-full">
-                  <div className="shrink-0 bg-[url('https://lh3.googleusercontent.com/pw/AP1GczOnByMPnygha7szPjlNZyEXDv6cG_OuuyYOW86nb5WvNvTUI4DMoYLAvy9HPWlbHbQndg78zjjcuJHTtrSah4CsamhYUpNp5tBbRvdsLaLOM7chSA7H-n8B6rUqdP0T924ZcC3zq7f3jn7s8ARyCU-g=w791-h869-s-no-gm?authuser=0')] bg-cover mx-auto rounded-full border border-white border-[2px] border-solid h-[140px] stroke-[1px] w-[140px] max-md:mt-5" />
+                  <div className="shrink-0 bg-[url('https://lh3.googleusercontent.com/pw/AP1GczOnByMPnygha7szPjlNZyEXDv6cG_OuuyYOW86nb5WvNvTUI4DMoYLAvy9HPWlbHbQndg78zjjcuJHTtrSah4CsamhYUpNp5tBbRvdsLaLOM7chSA7H-n8B6rUqdP0T924ZcC3zq7f3jn7s8ARyCU-g=w791-h869-s-no-gm?authuser=0')] bg-cover mx-auto rounded-full border border-lime-100 border-[2px] border-solid h-[140px] stroke-[1px] w-[140px] max-md:mt-5" />
                 </div>
                 <div className="flex flex-col ml-5 w-[68%] max-md:ml-0 max-md:w-full">
-                  <div className="flex flex-col self-stretch my-auto text-white max-md:mt-10 lg:text-start text-center">
-                    <div className="text-4xl font-medium">Sarthak Nande</div>
+                  <div className="flex flex-col self-stretch my-auto text-lime-100 max-md:mt-10 lg:text-start text-center">
+                    <div className="text-4xl text-bold font-bold">Sarthak Nande</div>
                     <div className="mt-3.5 text-lg ">
                       Computer Science Student
                     </div>
