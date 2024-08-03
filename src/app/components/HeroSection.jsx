@@ -44,9 +44,9 @@ export default function HeroSection() {
         <div className="flex flex-col ml-5 w-[44%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col grow max-md:mt-5 max-md:max-w-full">
             <div className="px-16 py-11 bg-[#DD5746]  border-[3px] border-white border-solid rounded-[38px] max-md:px-5 max-md:max-w-full">
-              <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-                <div className="flex flex-col w-[40%] max-md:ml-0 max-md:w-full">
-                  <div className="shrink-0 bg-[url('https://lh3.googleusercontent.com/pw/AP1GczOnByMPnygha7szPjlNZyEXDv6cG_OuuyYOW86nb5WvNvTUI4DMoYLAvy9HPWlbHbQndg78zjjcuJHTtrSah4CsamhYUpNp5tBbRvdsLaLOM7chSA7H-n8B6rUqdP0T924ZcC3zq7f3jn7s8ARyCU-g=w791-h869-s-no-gm?authuser=0')] bg-cover mx-auto rounded-full border border-lime-100 border-[2px] border-solid h-[140px] stroke-[1px] w-[140px] max-md:mt-5" />
+              <div className="flex max-lg:flex-wrap max-lg:justify-center   gap-5 max-md:flex-col max-md:gap-0">
+                <div className="flex flex-col max-lg:mr-8 w-[40%] max-md:ml-0 max-md:w-full">
+                  <div className="shrink-0 bg-[url('https://lh3.googleusercontent.com/pw/AP1GczOnByMPnygha7szPjlNZyEXDv6cG_OuuyYOW86nb5WvNvTUI4DMoYLAvy9HPWlbHbQndg78zjjcuJHTtrSah4CsamhYUpNp5tBbRvdsLaLOM7chSA7H-n8B6rUqdP0T924ZcC3zq7f3jn7s8ARyCU-g=w791-h869-s-no-gm?authuser=0')] bg-cover mx-auto rounded-full border border-lime-100 border-[4px] border-solid h-[160px] stroke-[1px] w-[160px] max-md:mt-5" />
                 </div>
                 <div className="flex flex-col ml-5 w-[68%] max-md:ml-0 max-md:w-full">
                   <div className="flex flex-col self-stretch my-auto text-lime-100 max-md:mt-10 lg:text-start text-center">
