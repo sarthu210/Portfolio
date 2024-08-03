@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import SliddingLine from "./components/SliddingLine";
 import SkillSection from "./components/SkillSection";
 import Footer from "./components/Footer";
+import ProjectSection from "./components/ProjectSection";
 export default function Home() {
   return (
     <div className="bg-[#252525]">
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection/>
       <SliddingLine/>
       <SkillSection/>
+      <ProjectSection/>
       <Footer/>
     </div>
   );
