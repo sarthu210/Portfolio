@@ -4,10 +4,11 @@ import SliddingLine from "./components/SliddingLine";
 import SkillSection from "./components/SkillSection";
 import Footer from "./components/Footer";
 import ProjectSection from "./components/ProjectSection";
+
 export default function Home() {
   return (
-    <div className="bg-[#252525]">
-      <NavBar/>
+    <div className="">
+      <NavBar />
       <HeroSection/>
       <SliddingLine/>
       <SkillSection/>

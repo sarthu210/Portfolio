@@ -10,13 +10,13 @@ export default function Footer() {
                 <div className="px-6">
                     <div className='flex mt-10 text-xl font-bold gap-3 justify-start' >
                         <div loading='lazy' className="w-16 rounded-lg shrink-0 bg-cover h-16 bg-[url('https://lh3.googleusercontent.com/pw/AP1GczOnByMPnygha7szPjlNZyEXDv6cG_OuuyYOW86nb5WvNvTUI4DMoYLAvy9HPWlbHbQndg78zjjcuJHTtrSah4CsamhYUpNp5tBbRvdsLaLOM7chSA7H-n8B6rUqdP0T924ZcC3zq7f3jn7s8ARyCU-g=w791-h869-s-no-gm?authuser=0')]"  alt=""></div>
-                        <h2 style={{alignContent: 'center'}}>Sarthak Nande</h2>
+                        <h2 className='text-white' style={{alignContent: 'center'}}>Sarthak Nande</h2>
                     </div>
 
-                    <p className="max-w-sm mt-2 text-gray-500 dark:text-gray-400">Join 31,000+ other and never miss out on new tips, tutorials, and more.</p>
+                    <p className="max-w-sm mt-2 text-gray-500 dark:text-gray-400">Web Developer | Java | JavaScript | Python | C | Data Structure | UI/UX | Graphic Designer</p>
 
                     <div className="flex mt-6 -mx-2">
-                        <a href="#"
+                        <a href="https://discordapp.com/users/sarthak_nande"
                             className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                             aria-label="Reddit">
                             <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,17 +26,8 @@ export default function Footer() {
                             </svg>
                         </a>
                     
-                        <a href="#"
-                            className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-                            aria-label="Facebook">
-                            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
-                                </path>
-                            </svg>
-                        </a>
                     
-                        <a href="#"
+                        <a href="https://github.com/sarthu210"
                             className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                             aria-label="Github">
                             <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,42 +40,36 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="mt-6 lg:mt-0 lg:flex-1">
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    <div>
-                        <h3 className="text-gray-700 uppercase dark:text-white">About</h3>
-                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Company</a>
-                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">community</a>
-                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Careers</a>
+            <div className="mt-14 lg:mt-0 lg:flex-1">
+                <div className="grid text-gray-500 mt-8 grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <div className='text-gray-500 mt-8'>
+                        <h3 className=" uppercase ">About</h3>
+                        <a href="#" className="block mt-2 text-sm  hover:underline">Education</a>
+                        <a href="#" className="block mt-2 text-sm  hover:underline">Experience</a>
+                        <a href="#" className="block mt-2 text-sm  hover:underline">Projects</a>
                     </div>
 
-                    <div>
-                        <h3 className="text-gray-700 uppercase dark:text-white">Blog</h3>
-                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Tec</a>
-                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Music</a>
-                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Videos</a>
+                    <div className='mt-8'>
+                        <h3 className=" uppercase ">Blog</h3>
+                        <a href="#" className="block mt-2 text-sm  hover:underline">Techonology</a>
+                        <a href="#" className="block mt-2 text-sm ">Music</a>
+                        <a href="#" className="block mt-2 text-sm ">Videos</a>
                     </div>
 
-                    <div>
-                        <h3 className="text-gray-700 uppercase dark:text-white">Products</h3>
-                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Mega cloud</a>
-                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Aperion UI</a>
-                        <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Meraki UI</a>
-                    </div>
 
-                    <div>
-                        <h3 className="text-gray-700 uppercase dark:text-white">Contact</h3>
-                        <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">+1 526 654 8965</span>
-                        <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">example@email.com</span>
+                    <div className='mt-8'>
+                        <h3 className="">Contact</h3>
+                        <span className="block mt-2 text-sm ">+91 90212 71962</span>
+                        <span className="block mt-2 text-sm ">sarthaknande19@gmail.com</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <hr className="h-px my-6 bg-gray-200 border-none dark:bg-gray-700"></hr>
+        <hr className="h-px my-6 bg-gray-700 border-none dark:bg-gray-700"></hr>
 
         <div>
-            <p className="text-center text-gray-500 dark:text-gray-400">© Brand 2020 - All rights reserved</p>
+            <p className="text-center text-gray-500 dark:text-gray-400">© Sarthak_Nande 2024 - All rights reserved</p>
         </div>
     </div>
 </footer>

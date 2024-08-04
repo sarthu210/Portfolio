@@ -1,13 +1,16 @@
-
-
+import React from "react";
+import { FlipWords } from "@/components/ui/flip-words";
 export default function HeroSection() {
+
+  const words = ["Coding", "Designing", "Research", "WEB Dev"];
+
   return (
-    <div className="m-2 mt-20 bg-[#252525] ">
-      <div className="flex gap-2 max-md:flex-col max-md:gap-0">
+    <div className="m-2 mt-20 z-50">
+      <div className="flex gap-2 max-md:flex-col max-md:gap-0 z-10">
         <div className="flex flex-col w-[56%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col grow px-16 pt-20 pb-10 w-full bg-[#AD88C6] border-[3px] border-white border-solid rounded-[38px] max-md:px-5 max-md:mt-5 max-md:max-w-full">
             <div className="text-5xl font-bold text-[#252525] max-md:max-w-full max-md:text-4xl">
-              Hey, I’m Sarthak, Web Developer With Strong Coding Skills{" "}
+              Hey, I’m Sarthak, Web Developer With Strong<br/><FlipWords words={words} /> Skills
             </div>
             <div className="mt-11 text-base text-justify text-black max-md:mt-10 max-md:max-w-full">
               I'm on a mission to bring innovation and creativity to the digital
