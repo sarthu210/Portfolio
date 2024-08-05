@@ -1,7 +1,8 @@
 'use client'
 import React, { useState } from 'react';
-import { motion,useScroll } from "framer-motion"
+import { motion, useScroll } from "framer-motion"
 import "../globals.css"
+
 export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { scrollYProgress } = useScroll();
@@ -9,7 +10,7 @@ export default function NavBar() {
      <div className="fixed top-0 w-full z-50">
          <div className="flex bg-[#252525] justify-between items-center py-4 px-8 border-b-[3px] border-white border-solid">
             <div>
-            <h1 className="text-2xl font-bold text-white">SPN</h1>
+            <h1 className="text-2xl  font-sans text-white">SARTHAK:NANDE</h1>
             </div>
             <div className="hidden md:block">
             <ul className="flex space-x-4">
@@ -35,6 +36,7 @@ export default function NavBar() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+                style={{color: 'white'}}
                 >
                 {isMenuOpen ? (
                     <path

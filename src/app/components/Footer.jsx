@@ -42,14 +42,14 @@ export default function Footer() {
 
             <div className="mt-14 lg:mt-0 lg:flex-1">
                 <div className="grid text-gray-500 mt-8 grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    <div className='text-gray-500 mt-8'>
+                    <div className='text-gray-500 '>
                         <h3 className=" uppercase ">About</h3>
                         <a href="#" className="block mt-2 text-sm  hover:underline">Education</a>
                         <a href="#" className="block mt-2 text-sm  hover:underline">Experience</a>
                         <a href="#" className="block mt-2 text-sm  hover:underline">Projects</a>
                     </div>
 
-                    <div className='mt-8'>
+                    <div className=''>
                         <h3 className=" uppercase ">Blog</h3>
                         <a href="#" className="block mt-2 text-sm  hover:underline">Techonology</a>
                         <a href="#" className="block mt-2 text-sm ">Music</a>
@@ -57,7 +57,7 @@ export default function Footer() {
                     </div>
 
 
-                    <div className='mt-8'>
+                    <div className=''>
                         <h3 className="">Contact</h3>
                         <span className="block mt-2 text-sm ">+91 90212 71962</span>
                         <span className="block mt-2 text-sm ">sarthaknande19@gmail.com</span>
