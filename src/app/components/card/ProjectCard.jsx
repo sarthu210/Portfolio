@@ -1,6 +1,9 @@
+'use client'
 import React from "react";
+import { useNavigate, Navigate } from "react-router-dom";
 
 export default function ProjectCard(props) {
+  
   return (
     <div className="mt-5">
       <div className="max-w-md overflow-hiddenrounded-lg border-white border-[3px] rounded-lg shadow-md " style={{backgroundColor: props.bg}}>
@@ -10,13 +13,13 @@ export default function ProjectCard(props) {
         <div>
             <span className="text-xs font-medium text-black uppercase ">Project</span>
             <a href="#" className="block mt-2 text-xl font-semibold text-black transition-colors duration-300 transform  hover:text-gray-600 hover:underline" tabindex="0" role="link">{props.title}</a>
-            <p className="mt-2 text-sm text-black ">{props.description}</p>
+            {props.description}
         </div>
 
         <div className="mt-4">
             <div className="flex gap-5 items-center">
                 <div className="flex items-center">
-                    <button onClick={props.link} className="rounded-md border-[3px] border-black bg-white w-32 h-10 text-black font-semibold " tabindex="0" role="link">GitHub Link</button>
+                  <a href={props.link}><button className="rounded-md border-[3px] border-black bg-white w-32 h-10 text-black font-semibold " tabindex="0" role="link">See More</button></a>
                 </div>
                 <span className="mx-1 text-sm font-bold text-black">{props.date}</span>
             </div>

@@ -85,3 +85,7 @@ button, a {
   background: var(--red);
   transform-origin: 0%;
 }
+
+.chin-tapak-damdam{
+  cursor: url('https://wondermake.xyz/assets/special-8dad077a.svg'), default;
+}

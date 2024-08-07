@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { motion, useScroll } from "framer-motion"
+import profile from "../../../public/profile.jpeg"
 import "../globals.css"
 
 export default function NavBar() {
@@ -10,7 +11,11 @@ export default function NavBar() {
      <div className="fixed top-0 w-full z-50">
          <div className="flex bg-[#252525] justify-between items-center py-4 px-8 border-b-[3px] border-white border-solid">
             <div>
-            <h1 className="text-2xl  font-sans text-white">SARTHAK:NANDE</h1>
+            <div className='flex gap-2'>
+            <img src='./favicon.ico' className='h-9' />
+            <h1 className="text-2xl font-bold text-white">SPN</h1>
+            </div>
+            
             </div>
             <div className="hidden md:block">
             <ul className="flex space-x-4">
@@ -76,7 +81,7 @@ export default function NavBar() {
             </div>
         )} 
         
-        <motion.div className="progress-bar" style={{ scaleX: scrollYProgress, backgroundColor: "red", height: "6px", position: "fixed", top: 60, left: 0, right: 0, zIndex: 100 }} />
+        <motion.div className="progress-bar" style={{ scaleX: scrollYProgress, backgroundColor: "red", height: "6px", position: "fixed", top: 65, left: 0, right: 0, zIndex: 100 }} />
         
      </div> 
      )

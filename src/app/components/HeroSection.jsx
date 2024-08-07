@@ -1,6 +1,7 @@
 import React from "react";
 import { FlipWords } from "@/components/ui/flip-words";
 import "../globals.css"
+
 export default function HeroSection() {
 
   const words = ["Coding", "Designing", "Research", "WEB Dev"];
@@ -26,28 +27,29 @@ export default function HeroSection() {
                 Contact Me
               </button>
               <div className="flex gap-2.5 items-start my-auto">
-                <img
+                <a href="https://github.com/sarthu210"><img
+                  
                   loading="lazy"
                   src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png "
                   className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 shrink-0 mt-1 aspect-[1] w-[42px] bg-white p-1 rounded-lg"
-                />
-                <img
+                /></a>
+                <a href="https://www.behance.net/sarthak_nande8"><img
                   loading="lazy"
                   src="https://cdn-icons-png.flaticon.com/512/4138/4138191.png"
                   className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 shrink-0 self-stretch mt-1 aspect-[1] w-[42px] h-[42px] bg-white p-1 rounded-lg"
-                />
-                <img
+                /></a>
+                <a href="https://www.linkedin.com/in/sarthak-nande/"><img
                   loading="lazy"
                   src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
                   className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 shrink-0 mt-1 aspect-[1] w-[42px] bg-white p-1 rounded-lg"
-                />
+                /></a>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col ml-5 w-[44%] max-md:ml-0 max-md:w-full">
+        <div className="flex flex-col ml-5 w-[44%] max-md:ml-0 max-md:w-full ">
           <div className="flex flex-col grow max-md:mt-5 max-md:max-w-full">
-            <div className="px-16 py-11 bg-[#DD5746]  border-[3px] border-white border-solid rounded-[38px] max-md:px-5 max-md:max-w-full">
+            <div className="px-16 py-11 chin-tapak-damdam bg-[#DD5746]  border-[3px] border-white border-solid rounded-[38px] max-md:px-5 max-md:max-w-full">
               <div className="flex max-lg:flex-wrap max-lg:justify-center   gap-5 max-md:flex-col max-md:gap-0">
                 <div className="flex flex-col max-lg:mr-8 w-[40%] max-md:ml-0 max-md:w-full">
                   <div className="shrink-0 bg-[url('https://lh3.googleusercontent.com/pw/AP1GczOnByMPnygha7szPjlNZyEXDv6cG_OuuyYOW86nb5WvNvTUI4DMoYLAvy9HPWlbHbQndg78zjjcuJHTtrSah4CsamhYUpNp5tBbRvdsLaLOM7chSA7H-n8B6rUqdP0T924ZcC3zq7f3jn7s8ARyCU-g=w791-h869-s-no-gm?authuser=0')] bg-cover mx-auto rounded-full border border-lime-100 border-[4px] border-solid h-[160px] stroke-[1px] w-[160px] max-md:mt-5" />
