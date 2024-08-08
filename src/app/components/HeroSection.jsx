@@ -1,5 +1,6 @@
 import React from "react";
 import { FlipWords } from "@/components/ui/flip-words";
+import { motion } from "framer-motion";
 import "../globals.css"
 
 export default function HeroSection() {
@@ -24,7 +25,7 @@ export default function HeroSection() {
             </div>
             <div className="flex flex-wrap gap-5 justify-between self-start mt-44 max-md:mt-10">
               <button className="justify-center px-5 py-2 text-base font-medium text-black border-[2px] border-white border-solid bg-white rounded-full max-md:pr-5 hover:bg-transparent hover:border-[2px] hover:border-white hover:border-solid hover:text-white ">
-                Contact Me
+                Hire Me
               </button>
               <div className="flex gap-2.5 items-start my-auto">
                 <a href="https://github.com/sarthu210"><img

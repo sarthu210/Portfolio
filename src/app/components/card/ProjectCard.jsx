@@ -12,7 +12,7 @@ export default function ProjectCard(props) {
     <div className="p-6">
         <div>
             <span className="text-xs font-medium text-black uppercase ">Project</span>
-            <a href="#" className="block mt-2 text-xl font-semibold text-black transition-colors duration-300 transform  hover:text-gray-600 hover:underline" tabindex="0" role="link">{props.title}</a>
+            <p className="block mt-2 text-xl font-semibold text-black transition-colors " >{props.title}</p>
             {props.description}
         </div>
 

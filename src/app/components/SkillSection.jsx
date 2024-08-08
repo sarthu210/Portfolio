@@ -1,5 +1,4 @@
 import * as React from "react";
-import { motion, useScroll } from "framer-motion";
 
 export default function SkillSection() {
 return (
