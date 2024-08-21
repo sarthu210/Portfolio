@@ -5,7 +5,7 @@ return (
   <div className="overflow-hidden mt-5 p-2">
     <div className="flex gap-5 max-md:flex-col">
       <div className="flex flex-col w-[73%] max-[1315px]:w-[63%] max-md:ml-0 max-md:w-full border-[3px] bg-amber-300 rounded-[38px] border-white">
-        <div className="flex flex-wrap grow gap-5 justify-between items-end px-10 pt-6 pb-44 w-full bg-amber-300 rounded-[36px] max-md:px-5 max-md:pb-24 max-md:mt-5 max-md:max-w-full">
+        <div className="flex flex-wrap grow gap-5 justify-between items-end px-10 pt-6 w-full bg-amber-300 rounded-[36px] max-md:px-5 max-md:mt-5 max-md:max-w-full">
           <div className="flex flex-col self-start">
             <div className="self-start text-5xl font-bold text-black max-md:text-4xl">
               Skills{" "}
@@ -67,6 +67,56 @@ return (
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/183a64ac8fe5e47e5d3f0543ab9797c35e27f38fe6cdd0d595248281cd6fc058?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/183a64ac8fe5e47e5d3f0543ab9797c35e27f38fe6cdd0d595248281cd6fc058?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/183a64ac8fe5e47e5d3f0543ab9797c35e27f38fe6cdd0d595248281cd6fc058?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/183a64ac8fe5e47e5d3f0543ab9797c35e27f38fe6cdd0d595248281cd6fc058?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/183a64ac8fe5e47e5d3f0543ab9797c35e27f38fe6cdd0d595248281cd6fc058?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/183a64ac8fe5e47e5d3f0543ab9797c35e27f38fe6cdd0d595248281cd6fc058?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/183a64ac8fe5e47e5d3f0543ab9797c35e27f38fe6cdd0d595248281cd6fc058?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/183a64ac8fe5e47e5d3f0543ab9797c35e27f38fe6cdd0d595248281cd6fc058?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2"
               className="object-contain border-[3px] border-black rounded-full shrink-0 aspect-square w-[80px] hover:scale-110 duration-300"
             />
+
+<img
+              loading="lazy"
+              srcSet="https://avatars.githubusercontent.com/u/30317862?s=280&v=4"
+              className="object-contain border-[3px] border-black rounded-full shrink-0 aspect-square w-[80px] hover:scale-110 duration-300"
+            />
+
+<img
+              loading="lazy"
+              srcSet="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwisn15CzhFE_Oof_hJfX2X7P-OvnAt5Ctgv0Qp1KZnUShwuodaiqp2kYKTZ9ONhYb0PQ&usqp=CAU"
+              className="object-contain border-[3px] border-black rounded-full shrink-0 aspect-square w-[80px] hover:scale-110 duration-300"
+            />
+
+<img
+              loading="lazy"
+              srcSet="https://static.vecteezy.com/system/resources/previews/027/127/560/original/javascript-logo-javascript-icon-transparent-free-png.png"
+              className="object-contain border-[3px] bg-white border-black rounded-full shrink-0 aspect-square w-[80px] hover:scale-110 duration-300"
+            />
+
+<img
+              loading="lazy"
+              srcSet="https://iconape.com/wp-content/png_logo_vector/postman.png"
+              className="object-contain border-[3px] bg-white border-black rounded-full shrink-0 aspect-square w-[80px] hover:scale-110 duration-300"
+            />
+
+<img
+              loading="lazy"
+              srcSet="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6BIlB_ercdvTO34Lq4zm2pPbCXO9lvMOplg&s"
+              className="object-contain border-[3px] bg-white border-black rounded-full shrink-0 aspect-square w-[80px] hover:scale-110 duration-300"
+            />
+
+<img
+              loading="lazy"
+              srcSet="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdoIaWlxCor8mAXOEPNPOL0cWetQvhMVwuKQ&s"
+              className="object-contain border-[3px] bg-white border-black rounded-full shrink-0 aspect-square w-[80px] hover:scale-110 duration-300"
+            />
+
+<img
+              loading="lazy"
+              srcSet="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHjk8XfQVfhAmzE4Mq66QZUTKvXSIjPUiyLA&s"
+              className="object-contain border-[3px] bg-white border-black rounded-full shrink-0 aspect-square w-[80px] hover:scale-110 duration-300"
+            />
+
+
+<img
+              loading="lazy"
+              srcSet="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBs7eIyUWImhwDwy6dsCVSJseDFR3lEJSGfQ&s"
+              className="object-contain border-[3px] bg-white border-black rounded-full shrink-0 aspect-square w-[80px] hover:scale-110 duration-300"
+            />
+            
              
             <div className="flex flex-wrap gap-5 justify-between">
               
