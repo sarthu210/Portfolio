@@ -8,7 +8,7 @@ export default function HeroSection() {
   const words = ["Coding", "Designing", "Research", "WEB Dev"];
 
   return (
-    <div className="m-2 mt-20 z-50">
+    <div className="m-2 mt-24 z-50">
       <div className="flex gap-2 max-md:flex-col max-md:gap-0 z-10">
         <div className="flex flex-col w-[56%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col grow px-16 pt-20 pb-10 w-full bg-[#AD88C6] border-[3px] border-white border-solid rounded-[38px] max-md:px-5 max-md:mt-5 max-md:max-w-full">
