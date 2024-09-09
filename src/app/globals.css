@@ -74,7 +74,6 @@
 
 html{
   cursor: url('https://wondermake.xyz/assets/default-b2d72215.svg'), default;
-  @import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
 }
 
 button, a {
@@ -149,3 +148,17 @@ button, a {
   
 }
 
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Internet Explorer and Edge */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+}

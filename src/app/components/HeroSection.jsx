@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { FlipWords } from "@/components/ui/flip-words";
 import * as motion from "framer-motion/client";
@@ -46,7 +47,7 @@ export default function HeroSection() {
               <motion.button 
                 whileHover={{ scale: 1.05 }} 
                 whileTap={{ scale: 0.95 }} 
-                className="justify-center px-5 py-2 text-base font-medium text-black border-[2px] border-white border-solid bg-white rounded-full max-md:pr-5 hover:bg-transparent hover:border-[2px] hover:border-white hover:border-solid hover:text-white"
+                className="inline-flex h-12 animate-shimmer items-center justify-center rounded-full border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
               >
                 Hire Me
               </motion.button>

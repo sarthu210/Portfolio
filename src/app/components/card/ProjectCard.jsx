@@ -1,7 +1,8 @@
 'use client'
 import React from "react";
 import { useNavigate, Navigate } from "react-router-dom";
-
+import { motion } from "framer-motion";
+import { LinkPreview } from "@/components/ui/link-preview";
 export default function ProjectCard(props) {
   
   return (
@@ -19,7 +20,7 @@ export default function ProjectCard(props) {
         <div className="mt-4">
             <div className="flex gap-5 items-center">
                 <div className="flex items-center">
-                  <a href={props.link}><button className="rounded-md border-[3px] border-black bg-white w-32 h-10 text-black font-semibold " tabindex="0" role="link">See More</button></a>
+                  <LinkPreview url={props.link}><button className="rounded-md border-[3px] border-black bg-white w-32 h-10 text-black font-semibold " tabindex="0" role="link">See More</button></LinkPreview>
                 </div>
                 <span className="mx-1 text-sm font-bold text-black">{props.date}</span>
             </div>
