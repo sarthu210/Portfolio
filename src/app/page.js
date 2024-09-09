@@ -4,13 +4,15 @@ import SliddingLine from "./components/SliddingLine";
 import SkillSection from "./components/SkillSection";
 import Footer from "./components/Footer";
 import ProjectSection from "./components/ProjectSection";
+import ParallaxText from "./components/ScrollMotion";
 
 export default function Home() {
   return (
     <div className="">
       <NavBar />
       <HeroSection/>
-      <SliddingLine/>
+      <ParallaxText baseVelocity={-5}>Computers are fast</ParallaxText>
+      <ParallaxText baseVelocity={5}>programmers keep it slow</ParallaxText>
       <SkillSection/>
       <ProjectSection/>
       <Footer/>

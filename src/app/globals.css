@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -68,8 +70,11 @@
   }
 }
 
+
+
 html{
   cursor: url('https://wondermake.xyz/assets/default-b2d72215.svg'), default;
+  @import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
 }
 
 button, a {
@@ -89,3 +94,58 @@ button, a {
 .chin-tapak-damdam{
   cursor: url('https://wondermake.xyz/assets/special-8dad077a.svg'), default;
 }
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: orange;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: purple;
+}
+
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--accent);
+  bottom: 100px;
+}
+
+.parallax {
+  overflow: hidden;
+  letter-spacing: -2px;
+  line-height: 0.8;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: "Plaster", system-ui;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.parallax .scroller {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 64px;
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.parallax span {
+  display: block;
+  margin-right: 30px;
+  color: white;
+  
+}
+

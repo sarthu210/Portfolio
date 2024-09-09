@@ -1,54 +1,94 @@
 import React from "react";
 import { FlipWords } from "@/components/ui/flip-words";
-import { motion } from "framer-motion";
-import "../globals.css"
-
+import * as motion from "framer-motion/client";
+import "../globals.css";
 export default function HeroSection() {
 
   const words = ["Coding", "Designing", "Research", "WEB Dev"];
 
   return (
-    <div className="m-2 mt-24 z-50">
+    <div className="m-2 mt-24 z-50 overflow-x-hidden">
       <div className="flex gap-2 max-md:flex-col max-md:gap-0 z-10">
-        <div className="flex flex-col w-[56%] max-md:ml-0 max-md:w-full">
+        <motion.div 
+          className="flex flex-col w-[56%] max-md:ml-0 max-md:w-full"
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
           <div className="flex flex-col grow px-16 pt-20 pb-10 w-full bg-[#AD88C6] border-[3px] border-white border-solid rounded-[38px] max-md:px-5 max-md:mt-5 max-md:max-w-full">
-            <div className="text-5xl font-bold text-[#252525] max-md:max-w-full max-md:text-4xl">
-              Hey, I’m Sarthak, Web Developer With Strong<br/><FlipWords words={words} /> Skills
-            </div>
-            <div className="mt-11 text-base text-justify text-black max-md:mt-10 max-md:max-w-full">
+            <motion.div 
+              className="text-5xl font-bold text-[#252525] max-md:max-w-full max-md:text-4xl"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.2 }}
+            >
+              Hey, I’m Sarthak, Web Developer With Strong<br />
+              <FlipWords words={words} /> Skills
+            </motion.div>
+
+            <motion.div 
+              className="mt-11 text-base text-justify text-black max-md:mt-10 max-md:max-w-full"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.4 }}
+            >
               I'm on a mission to bring innovation and creativity to the digital
-              world.
-              <br />
-              Whether it's building robust software or crafting stunning web
-              experiences,
-              <br /> I'm always eager to learn and push my boundaries.
-            </div>
-            <div className="flex flex-wrap gap-5 justify-between self-start mt-44 max-md:mt-10">
-              <button className="justify-center px-5 py-2 text-base font-medium text-black border-[2px] border-white border-solid bg-white rounded-full max-md:pr-5 hover:bg-transparent hover:border-[2px] hover:border-white hover:border-solid hover:text-white ">
+              world. Whether it's building robust software or crafting stunning web
+              experiences, I'm always eager to learn and push my boundaries.
+            </motion.div>
+
+            <motion.div 
+              className="flex flex-wrap gap-5 justify-between self-start mt-44 max-md:mt-10"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.6 }}
+            >
+              <motion.button 
+                whileHover={{ scale: 1.05 }} 
+                whileTap={{ scale: 0.95 }} 
+                className="justify-center px-5 py-2 text-base font-medium text-black border-[2px] border-white border-solid bg-white rounded-full max-md:pr-5 hover:bg-transparent hover:border-[2px] hover:border-white hover:border-solid hover:text-white"
+              >
                 Hire Me
-              </button>
+              </motion.button>
+
               <div className="flex gap-2.5 items-start my-auto">
-                <a href="https://github.com/sarthu210"><img
-                  
-                  loading="lazy"
-                  src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png "
-                  className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 shrink-0 mt-1 aspect-[1] w-[42px] bg-white p-1 rounded-lg"
-                /></a>
-                <a href="https://www.behance.net/sarthak_nande8"><img
-                  loading="lazy"
-                  src="https://cdn-icons-png.flaticon.com/512/4138/4138191.png"
-                  className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 shrink-0 self-stretch mt-1 aspect-[1] w-[42px] h-[42px] bg-white p-1 rounded-lg"
-                /></a>
-                <a href="https://www.linkedin.com/in/sarthak-nande/"><img
-                  loading="lazy"
-                  src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
-                  className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 shrink-0 mt-1 aspect-[1] w-[42px] bg-white p-1 rounded-lg"
-                /></a>
+                <motion.a
+                  href="https://github.com/sarthu210"
+                  whileHover={{ scale: 1.1 }}
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png "
+                    className="shrink-0 mt-1 aspect-[1] w-[42px] bg-white p-1 rounded-lg"
+                  />
+                </motion.a>
+
+                <motion.a
+                  href="https://www.behance.net/sarthak_nande8"
+                  whileHover={{ scale: 1.1 }}
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn-icons-png.flaticon.com/512/4138/4138191.png"
+                    className="shrink-0 mt-1 aspect-[1] w-[42px] h-[42px] bg-white p-1 rounded-lg"
+                  />
+                </motion.a>
+
+                <motion.a
+                  href="https://www.linkedin.com/in/sarthak-nande/"
+                  whileHover={{ scale: 1.1 }}
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
+                    className="shrink-0 mt-1 aspect-[1] w-[42px] bg-white p-1 rounded-lg"
+                  />
+                </motion.a>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
-        <div className="flex flex-col ml-5 w-[44%] max-md:ml-0 max-md:w-full ">
+        </motion.div>
+        <motion.div className="flex flex-col ml-5 w-[44%] max-md:ml-0  max-md:w-full" initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1, delay: 0.2 }} >
           <div className="flex flex-col grow max-md:mt-5 max-md:max-w-full">
             <div className="px-16 py-11 chin-tapak-damdam bg-[#DD5746]  border-[3px] border-white border-solid rounded-[38px] max-md:px-5 max-md:max-w-full">
               <div className="flex max-lg:flex-wrap max-lg:justify-center   gap-5 max-md:flex-col max-md:gap-0">
@@ -90,7 +130,7 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
