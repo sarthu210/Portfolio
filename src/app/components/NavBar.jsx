@@ -89,7 +89,7 @@ export default function NavBar() {
                 </ul>
             </motion.div>
 
-            <motion.div className="progress-bar" style={{ scaleX: scrollYProgress, backgroundColor: "blue", height: "6px", position: "fixed", top: 78, left: 0, right: 0, zIndex: 100 }} />
+            <motion.div className="progress-bar" style={{ scaleX: scrollYProgress, background: "linear-gradient(270deg, rgba(201,1,5,1) 0%, rgba(158,0,6,1) 52%, rgba(255,118,118,1) 100%)", height: "6px", position: "fixed", top: 78, left: 0, right: 0, zIndex: 100 }} />
         </div>
     );
 }
