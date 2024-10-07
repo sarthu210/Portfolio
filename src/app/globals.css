@@ -162,3 +162,9 @@ button, a {
 .hide-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
 }
+
+@media (min-width: 768px) {
+  .scroll-arrow {
+    display: none;
+  }
+}

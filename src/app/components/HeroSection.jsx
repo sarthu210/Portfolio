@@ -1,36 +1,36 @@
-"use client"
+"use client";
 import React from "react";
 import { FlipWords } from "@/components/ui/flip-words";
 import * as motion from "framer-motion/client";
 import "../globals.css";
-export default function HeroSection() {
 
+export default function HeroSection() {
   const words = ["Coding", "Designing", "Research", "WEB Dev"];
 
   return (
     <div className="m-2 mt-24 z-50 overflow-x-hidden">
       <div className="flex gap-2 max-md:flex-col max-md:gap-0 z-10">
-        <motion.div 
+        <motion.div
           className="flex flex-col w-[56%] max-md:ml-0 max-md:w-full"
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}  // Removed x animation
+          animate={{ opacity: 1 }}  // Fade in effect
           transition={{ duration: 1 }}
         >
           <div className="flex flex-col grow px-16 pt-20 pb-10 w-full bg-[#AD88C6] border-[3px] border-white border-solid rounded-[38px] max-md:px-5 max-md:mt-5 max-md:max-w-full">
-            <motion.div 
+            <motion.div
               className="text-5xl font-bold text-[#252525] max-md:max-w-full max-md:text-4xl"
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}  // Removed y animation
+              animate={{ opacity: 1 }}   // Fade in effect
               transition={{ duration: 1, delay: 0.2 }}
             >
               Hey, I’m Sarthak, Web Developer With Strong<br />
               <FlipWords words={words} /> Skills
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="mt-11 text-base text-justify text-black max-md:mt-10 max-md:max-w-full"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}  // Removed y animation
+              animate={{ opacity: 1 }}   // Fade in effect
               transition={{ duration: 1, delay: 0.4 }}
             >
               I'm on a mission to bring innovation and creativity to the digital
@@ -38,15 +38,15 @@ export default function HeroSection() {
               experiences, I'm always eager to learn and push my boundaries.
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="flex flex-wrap gap-5 justify-between self-start mt-44 max-md:mt-10"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }} 
+              animate={{ opacity: 1 }}  
               transition={{ duration: 1, delay: 0.6 }}
             >
-              <motion.button 
-                whileHover={{ scale: 1.05 }} 
-                whileTap={{ scale: 0.95 }} 
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 className="inline-flex h-12 animate-shimmer items-center justify-center rounded-full border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
               >
                 Hire Me
@@ -59,7 +59,7 @@ export default function HeroSection() {
                 >
                   <img
                     loading="lazy"
-                    src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png "
+                    src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png"
                     className="shrink-0 mt-1 aspect-[1] w-[42px] bg-white p-1 rounded-lg"
                   />
                 </motion.a>
@@ -89,10 +89,16 @@ export default function HeroSection() {
             </motion.div>
           </div>
         </motion.div>
-        <motion.div className="flex flex-col ml-5 w-[44%] max-md:ml-0  max-md:w-full" initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1, delay: 0.2 }} >
+
+        <motion.div 
+          className="flex flex-col ml-5 w-[44%] max-md:ml-0 max-md:w-full" 
+          initial={{ opacity: 0 }} // Removed x animation
+          animate={{ opacity: 1 }}  // Fade in effect
+          transition={{ duration: 1, delay: 0.2 }}
+        >
           <div className="flex flex-col grow max-md:mt-5 max-md:max-w-full">
-            <div className="px-16 py-11 chin-tapak-damdam bg-[#DD5746]  border-[3px] border-white border-solid rounded-[38px] max-md:px-5 max-md:max-w-full">
-              <div className="flex max-lg:flex-wrap max-lg:justify-center   gap-5 max-md:flex-col max-md:gap-0">
+            <div className="px-16 py-11 chin-tapak-damdam bg-[#DD5746] border-[3px] border-white border-solid rounded-[38px] max-md:px-5 max-md:max-w-full">
+              <div className="flex max-lg:flex-wrap max-lg:justify-center gap-5 max-md:flex-col max-md:gap-0">
                 <div className="flex flex-col max-lg:mr-8 w-[40%] max-md:ml-0 max-md:w-full">
                   <div className="shrink-0 bg-[url('https://lh3.googleusercontent.com/pw/AP1GczOnByMPnygha7szPjlNZyEXDv6cG_OuuyYOW86nb5WvNvTUI4DMoYLAvy9HPWlbHbQndg78zjjcuJHTtrSah4CsamhYUpNp5tBbRvdsLaLOM7chSA7H-n8B6rUqdP0T924ZcC3zq7f3jn7s8ARyCU-g=w791-h869-s-no-gm?authuser=0')] bg-cover mx-auto rounded-full border border-lime-100 border-[4px] border-solid h-[160px] stroke-[1px] w-[160px] max-md:mt-5" />
                 </div>
@@ -115,7 +121,7 @@ export default function HeroSection() {
               <div className="text-5xl font-semibold text-neutral-800 max-md:max-w-full max-md:text-4xl">
                 About Me
               </div>
-              <div className="mt-11 text-justify text-neutral-800  text-base  max-md:mt-10 max-md:max-w-full">
+              <div className="mt-11 text-justify text-neutral-800 text-base max-md:mt-10 max-md:max-w-full">
                 👋 Hi there! I'm Sarthak Nande, a passionate Computer Science
                 and Engineering student at SKN Sinhgad College of Engineering,
                 Pandharpur. 🎓
@@ -136,5 +142,3 @@ export default function HeroSection() {
     </div>
   );
 }
-
-

@@ -12,9 +12,24 @@ export default function ProjectCard(props) {
 
     <div className="p-6">
         <div>
-            <span className="text-xs font-medium text-black uppercase ">Project</span>
+            <span className="text-xs font-medium text-white uppercase bg-black p-1 border-r-4  ">Project</span>
             <p className="block mt-2 text-xl font-semibold text-black transition-colors " >{props.title}</p>
             {props.description}
+        </div>
+
+        <div className="mt-4">
+          <span className="text-xs font-medium text-white uppercase bg-black p-1 border-r-4  ">Skills</span>
+          {
+  Array.isArray(props.skills) && props.skills.length > 0 ? (
+    props.skills.map((skill, index) => (
+      <span key={index} className="inline-block mt-2 mr-2 px-3 py-1 ml-1 text-xs font-semibold text-black bg-white rounded-full">
+        {skill}
+      </span>
+    ))
+  ) : (
+    <span>No skills available</span>
+  )
+}
         </div>
 
         <div className="mt-4">
@@ -25,6 +40,7 @@ export default function ProjectCard(props) {
                 <span className="mx-1 text-sm font-bold text-black">{props.date}</span>
             </div>
         </div>
+      
     </div>
 </div>
     </div>

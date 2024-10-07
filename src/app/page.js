@@ -13,8 +13,8 @@ export default function Home() {
       <HeroSection/>
       <ParallaxText baseVelocity={-5}>Computers are fast</ParallaxText>
       <ParallaxText baseVelocity={5}>programmers keep it slow</ParallaxText>
-      <SkillSection/>
       <ProjectSection/>
+      <SkillSection/>
       <Footer/>
     </div>
   );
