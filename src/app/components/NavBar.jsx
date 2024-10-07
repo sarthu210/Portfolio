@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { motion, useScroll } from "framer-motion";
+import { useNavigate } from 'react-router-dom';
 import profile from "../../../public/profile.jpeg";
 import "../globals.css";
 import Image from 'next/image';
@@ -8,6 +9,7 @@ import Image from 'next/image';
 export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { scrollYProgress } = useScroll();
+
 
     // Animation variants for the menu items
     const menuItemVariants = {
@@ -19,6 +21,11 @@ export default function NavBar() {
     const menuVariants = {
         hidden: { opacity: 0, height: 0 },
         visible: { opacity: 1, height: "auto", transition: { duration: 0.5, ease: "easeOut" } }
+    };
+
+    const handleNavigation = (path) => {
+        navigate(path);
+        setIsMenuOpen(false); // Close the menu after navigation
     };
 
     return (
@@ -40,6 +47,7 @@ export default function NavBar() {
                                 animate="visible"
                                 variants={menuItemVariants}
                                 className="text-white cursor-pointer hover:text-[#AD88C6] transition-colors duration-300"
+                                onClick={() => window.open(`/${item.toLowerCase().replace(' ', '-')}`)}
                             >
                                 {item}
                             </motion.li>
@@ -83,6 +91,7 @@ export default function NavBar() {
                             initial="hidden"
                             animate={isMenuOpen ? "visible" : "hidden"}
                             transition={{ delay: 0.1 * index }}
+                            onClick={() => window.open(`/${item.toLowerCase().replace(' ', '-')}`)}
                         >
                             {item}
                         </motion.li>
