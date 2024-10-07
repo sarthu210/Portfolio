@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { motion, useScroll } from "framer-motion";
 import profile from "../../../public/profile.jpeg";
 import "../globals.css";
+import Image from 'next/image';
 
 export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ export default function NavBar() {
         <div className="fixed top-0 w-full z-50">
             <div className="flex bg-[#252525] justify-between items-center py-4 px-8 border-b-[3px] border-white border-solid">
                 <motion.div initial="hidden" animate="visible" variants={menuItemVariants} className='flex gap-2'>
-                    <img src='./favicon.ico' className='h-12' />
+                    <Image height={60} width={48} src='https://lh3.googleusercontent.com/pw/AP1GczOnByMPnygha7szPjlNZyEXDv6cG_OuuyYOW86nb5WvNvTUI4DMoYLAvy9HPWlbHbQndg78zjjcuJHTtrSah4CsamhYUpNp5tBbRvdsLaLOM7chSA7H-n8B6rUqdP0T924ZcC3zq7f3jn7s8ARyCU-g=w791-h869-s-no-gm?authuser=0' className='h-12 rounded-full border-white border-[2px]'  />
                     <div className='flex flex-col'>
                         <h1 className="text-md font-bold text-white">Sarthak Nande</h1>
                         <h1 className='text-sm italic text-[#a2a2a2]'>Computer Science Student</h1>
