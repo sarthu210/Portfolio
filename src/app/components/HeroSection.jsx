@@ -3,6 +3,7 @@ import React from "react";
 import { FlipWords } from "@/components/ui/flip-words";
 import * as motion from "framer-motion/client";
 import "../globals.css";
+import Image from "next/image";
 
 export default function HeroSection() {
   const words = ["Coding", "Designing", "Research", "WEB Dev"];
@@ -57,8 +58,10 @@ export default function HeroSection() {
                   href="https://github.com/sarthu210"
                   whileHover={{ scale: 1.1 }}
                 >
-                  <img
+                  <Image
                     loading="lazy"
+                    width={42}
+                    height={42}
                     src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png"
                     className="shrink-0 mt-1 aspect-[1] w-[42px] bg-white p-1 rounded-lg"
                   />
@@ -68,8 +71,10 @@ export default function HeroSection() {
                   href="https://www.behance.net/sarthak_nande8"
                   whileHover={{ scale: 1.1 }}
                 >
-                  <img
+                  <Image
                     loading="lazy"
+                    width={42}
+                    height={42}
                     src="https://cdn-icons-png.flaticon.com/512/4138/4138191.png"
                     className="shrink-0 mt-1 aspect-[1] w-[42px] h-[42px] bg-white p-1 rounded-lg"
                   />
@@ -79,8 +84,10 @@ export default function HeroSection() {
                   href="https://www.linkedin.com/in/sarthak-nande/"
                   whileHover={{ scale: 1.1 }}
                 >
-                  <img
+                  <Image
                     loading="lazy"
+                    width={42}
+                    height={42}
                     src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
                     className="shrink-0 mt-1 aspect-[1] w-[42px] bg-white p-1 rounded-lg"
                   />
