@@ -5,6 +5,7 @@ import SkillSection from "./components/SkillSection";
 import Footer from "./components/Footer";
 import ProjectSection from "./components/ProjectSection";
 import ParallaxText from "./components/ScrollMotion";
+import { Education } from "./components/Education";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ParallaxText baseVelocity={5}>programmers keep it slow</ParallaxText>
       <ProjectSection/>
       <SkillSection/>
+      <Education/>
       <Footer/>
     </div>
   );
