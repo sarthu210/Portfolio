@@ -1,6 +1,8 @@
+'use client'
 import Image from "next/image";
 import * as React from "react";
-
+import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 
 export default function SkillSection() {
 return (
@@ -175,8 +177,8 @@ height={80}
           </div>
         </div>
       </div>
-      <div className="flex flex-col ml-5 w-[27%] max-[1315px]:w-[35%] max-[1315px]:h-[100%] max-md:ml-0 max-md:w-full ">
-        <div className="flex flex-col px-14 py-28 mx-auto w-full text-center  text-black bg-teal-300 rounded-[38px] border-white border-[3px] max-md:px-5 max-md:py-24 max-md:mt-5">
+      <div className="flex flex-col w-[27%] max-[1315px]:w-[35%] max-[1315px]:h-[100%] max-md:ml-0 max-md:w-full ">
+        <div className="flex flex-col px-10 py-20 mx-auto w-full text-center  text-black bg-teal-300 rounded-[38px] border-white border-[3px] max-md:px-5 max-md:py-24 max-md:mt-5">
           <div className="self-center text-4xl font-semibold w-[284px]">
             Click Here To
             <br />
@@ -184,14 +186,18 @@ height={80}
             <br />
             Resume!
           </div>
-          <div className="flex flex-wrap gap-3.5 py-4 pr-3.5 pl-7 mt-24 -mr-0.5 text-2xl border-[3px] border-black bg-amber-300 rounded-[30px] max-md:px-5 max-md:mt-10 hover:bg-white">
-            <a href="/sarthak_nande_resume.pdf" download="sarthak_resume.pdf" className="grow my-auto -mr-0.5 -ml-px">Download CV</a>
-            <img
-              loading="lazy"
-              srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/a264108b99b923130bebd44dede5395f7c1878d6dc9bf26ece102aa54b984429?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/a264108b99b923130bebd44dede5395f7c1878d6dc9bf26ece102aa54b984429?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/a264108b99b923130bebd44dede5395f7c1878d6dc9bf26ece102aa54b984429?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/a264108b99b923130bebd44dede5395f7c1878d6dc9bf26ece102aa54b984429?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/a264108b99b923130bebd44dede5395f7c1878d6dc9bf26ece102aa54b984429?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/a264108b99b923130bebd44dede5395f7c1878d6dc9bf26ece102aa54b984429?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/a264108b99b923130bebd44dede5395f7c1878d6dc9bf26ece102aa54b984429?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/a264108b99b923130bebd44dede5395f7c1878d6dc9bf26ece102aa54b984429?apiKey=a3f950a3ec5649a7989306e881a765e2&&apiKey=a3f950a3ec5649a7989306e881a765e2"
-              className="object-contain shrink-0 aspect-square w-[27px]"
-            />
-          </div>
+          <div className="flex-grow mt-10 flex items-center justify-center">
+          <motion.a
+              href="/sarthak_nande_resume.pdf"
+              download="sarthak_resume.pdf"
+              className="flex items-center justify-center gap-3 py-4 px-6 text-xl font-medium text-white bg-black rounded-full hover:bg-gray-800 transition-colors duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Download CV
+              <Download size={24} />
+            </motion.a>
+              </div>
         </div>
       </div>
     </div>
