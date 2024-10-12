@@ -29,10 +29,10 @@ export const Timeline = ({
       className="w-full bg-[#252525] dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-4xl md:text-4xl mb-4 text-[#48CFCB] font-semibold  max-w-4xl">
+        <h2 className="text-4xl md:text-6xl mb-4 text-[#48CFCB] font-semibold  max-w-4xl">
           Education and Experience
         </h2>
-        <p className="text-[#F5F5F5] text-sm md:text-base max-w-sm"> Over the past few years, I’ve honed my skills in software development, focusing on the MERN stack at Aceternity. Here’s a timeline of my key milestones. </p>
+        <p className="text-[#F5F5F5] text-sm md:text-base max-w-3xl"> Comprehensive Academic Foundation in Computer Science & Engineering, Combined with Extensive Hands-On Experience in Full-Stack Development, Open-Source Contributions, Community Leadership, and Collaborative Projects across Various Domains</p>
       </div>
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
@@ -45,7 +45,7 @@ export const Timeline = ({
                   className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
               </div>
               <h3
-                className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 ">
+                className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-white ">
                 {item.title}
               </h3>
             </div>

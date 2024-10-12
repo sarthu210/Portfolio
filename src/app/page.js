@@ -16,6 +16,7 @@ export default function Home() {
       <ParallaxText baseVelocity={5}>programmers keep it slow</ParallaxText>
       <ProjectSection/>
       <SkillSection/>
+      <Education/>
       <Footer/>
     </div>
   );
