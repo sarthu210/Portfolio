@@ -65,10 +65,10 @@ export function Education() {
           </div>
           <div className="flex gap-2">
             <Image src="https://media.licdn.com/dms/image/v2/D560BAQHqqREuYOZewQ/company-logo_200_200/company-logo_200_200/0/1701272685881/unstop_logo?e=1736985600&v=beta&t=1wH_PV40NBddwGViqAhvI9BjZGkq2EBBo8OIXtaAcKo"
-              alt="Postman API Hackathon"
+              alt="Unstop Logo"
               width={70}
               height={70}
-              className=" mb-8"
+              className=" mb-8 "
             />
             <p className="text-white text-xs self-center md:text-sm font-normal mb-8">
             As a Unstop Campus Representative, I actively promoted Unstop's events and initiatives within my college community, enhancing awareness and engagement. I developed my skills in community development, code design, and communication by organizing events and collaborating with peers. This role helped me improve my leadership and networking abilities while representing Unstop's brand at a grassroots level.
